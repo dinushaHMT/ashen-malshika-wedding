@@ -1,0 +1,36 @@
+{
+  "groom": "Ashen Piumal",
+  "bride": "Malshika Piumali",
+  "dateISO": "2026-07-24T10:04:00+05:30",
+  "dateText": "24 JULY 2026",
+  "timeText": "10.04 AM",
+  "venue": "Ranowell Hotel",
+  "location": "Kochchikade, Negombo, Sri Lanka",
+  "mapQuery": "Ranowell Hotel Kochchikade Negombo Sri Lanka",
+  "invitation": "Together with their families, Ashen Piumal and Malshika Piumali joyfully invite you to celebrate their wedding ceremony.",
+  "specialTitle": "Celebrating Love, Family & Tradition.",
+  "specialMessage": "We warmly invite you to join us as we begin a beautiful new chapter together. The celebration is inspired by Sri Lankan culture, family blessings, elegant traditions, music, love and unforgettable memories.",
+  "rsvpPhone": "94769788163",
+  "schedule": [
+    {
+      "time": "10:04 AM",
+      "title": "Traditional Poruwa Ceremony",
+      "note": "Blessings, rituals and the beginning of a beautiful journey."
+    },
+    {
+      "time": "12:30 PM",
+      "title": "Wedding Lunch",
+      "note": "A warm celebration meal with family and friends."
+    },
+    {
+      "time": "02:00 PM",
+      "title": "Photography & Celebration",
+      "note": "Capturing memories, laughter and joyful moments."
+    },
+    {
+      "time": "03:34 PM",
+      "title": "Going Away Ceremony",
+      "note": "A heartfelt farewell and blessings for the couple."
+    }
+  ]
+}

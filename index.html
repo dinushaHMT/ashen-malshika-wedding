@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashen & Malshika | Wedding Celebration</title>
+  <meta name="description" content="Ashen Piumal and Malshika Piumali wedding invitation">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-petals" aria-hidden="true"></div>
+
+  <header class="hero" id="home">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/hotel.jpg">
+      <source src="assets/download.mp4" type="video/mp4">
+    </video>
+    <div class="hero-shade"></div>
+
+    <nav class="nav">
+      <a href="#home" class="monogram">A <span>&</span> M</a>
+      <div>
+        <a href="#details">Details</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Wedding Celebration</p>
+      <h1><span id="groomName"></span><small>&</small><span id="brideName"></span></h1>
+      <p class="invitation" id="invitationText"></p>
+      <div class="hero-date">
+        <strong id="dateText"></strong>
+        <span id="timeText"></span>
+        <em id="venueText"></em>
+      </div>
+      <div id="countdown" class="countdown"></div>
+      <a href="#rsvp" class="btn">Confirm Your Blessing</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <div class="intro-text reveal">
+        <p class="section-kicker">Our Special Day</p>
+        <h2 id="specialTitle"></h2>
+        <p id="specialMessage"></p>
+      </div>
+      <div class="avatar-card reveal">
+        <img src="assets/cartoon_couple.webp" alt="Couple illustration" />
+      </div>
+    </section>
+
+    <section id="details" class="section details reveal">
+      <p class="section-kicker">Wedding Details</p>
+      <h2>Join Us at Ranowell Hotel</h2>
+      <div class="details-grid">
+        <article>
+          <span>📅</span>
+          <h3>Date & Time</h3>
+          <p><b id="detailsDate"></b><br><span id="detailsTime"></span></p>
+        </article>
+        <article>
+          <span>📍</span>
+          <h3>Venue</h3>
+          <p><b id="detailsVenue"></b><br><span id="detailsLocation"></span></p>
+        </article>
+        <article>
+          <span>🪔</span>
+          <h3>Ceremony</h3>
+          <p>Traditional Poruwa blessings followed by lunch, photography and celebration.</p>
+        </article>
+      </div>
+      <a id="mapLink" class="btn secondary" target="_blank" rel="noopener">Open Google Maps</a>
+    </section>
+
+    <section class="section hotel-section">
+      <div class="hotel-image reveal">
+        <img src="assets/hotel.jpg" alt="Ranowell Hotel">
+      </div>
+      <div class="hotel-copy reveal">
+        <p class="section-kicker">Venue</p>
+        <h2>Ranowell Hotel, Kochchikade</h2>
+        <p>A warm and elegant setting chosen to celebrate love, family blessings and unforgettable memories.</p>
+      </div>
+    </section>
+
+    <section class="section schedule-section reveal">
+      <p class="section-kicker">Wedding Day</p>
+      <h2>Schedule</h2>
+      <div id="scheduleList" class="timeline"></div>
+    </section>
+
+    <section id="gallery" class="section gallery-section reveal">
+      <p class="section-kicker">Gallery</p>
+      <h2>Bride & Groom</h2>
+      <p class="muted">Photos change automatically with a smooth transition.</p>
+
+      <div class="gallery-layout">
+        <div class="profile-card">
+          <img src="assets/groom_avatar.png" alt="Groom avatar">
+          <h3>Ashen Piumal</h3>
+          <p>Groom</p>
+        </div>
+
+        <div class="photo-slider">
+          <img id="sliderImage" src="assets/groom.jpg" alt="Wedding photo slider">
+          <div class="slider-caption" id="sliderCaption">Groom</div>
+        </div>
+
+        <div class="profile-card">
+          <img src="assets/bride_avatar.png" alt="Bride avatar">
+          <h3>Malshika Piumali</h3>
+          <p>Bride</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section rsvp-section">
+      <div class="rsvp-card reveal">
+        <p class="section-kicker">RSVP</p>
+        <h2>Will You Celebrate With Us?</h2>
+        <p>Please confirm your attendance through WhatsApp.</p>
+        <form onsubmit="sendRSVP(event)">
+          <input id="guestName" placeholder="Your Name" required />
+          <select id="guestCount" required>
+            <option value="">Number of Guests</option>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>Family</option>
+          </select>
+          <textarea id="guestMessage" placeholder="Blessing / Message"></textarea>
+          <button type="submit">Send RSVP by WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section finale reveal">
+      <img src="assets/cartoon_couple.webp" alt="Couple cartoon">
+      <p class="section-kicker">With Love</p>
+      <h2>Ashen & Malshika</h2>
+      <p>Thank you for being part of our story. Your blessings will make our day even more special.</p>
+      <div class="final-date">24 JULY 2026 • 10.04 AM</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love for Ashen & Malshika</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
